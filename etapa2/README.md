@@ -21,26 +21,6 @@ O objetivo é provisionar uma instância EC2 (Ubuntu) e sua infraestrutura de re
 
 O conceito de Módulos é utilizado para que o código seja reutilizável, isolando a lógica de provisionamento de recursos semelhantes.
 
-**Estrutura do Diretório:**
-
-etapa2/
-├── _modules/
-│   ├── ec2_docker/
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   ├── variables.tf
-│   │   └── userdata.sh (Script de Instalação do Docker - O mesmo usado na etapa 1)
-│   ├── networking/
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   └── variables.tf
-│   └── security/
-│       ├── main.tf
-│       ├── outputs.tf
-│       └── variables.tf
-├── main.tf (Chama os módulos)
-├── providers.tf (Define o provedor AWS)
-└── README.md
 ---
 
 2. Configuração e Fluxo de Dados
