@@ -28,7 +28,7 @@ O fluxo da solução é dividido em duas partes principais: **Infraestrutura com
 | **app/Dockerfile** | Instruções para construir a imagem Docker da aplicação, baseada em Nginx ou Apache2, incluindo o conteúdo de html/. | |
 | **terraform/** | Raiz de toda a **Infraestrutura como Código (IaC)**. | Módulos e arquivos .tf. |
 
-**2. ☁️ Modularização da Infraestrutura (Terraform)**
+**2. Modularização da Infraestrutura (Terraform)**
 
 O Terraform utiliza o conceito de **módulos (_modules)** para garantir que a criação de recursos sejabreutilizável:
 

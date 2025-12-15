@@ -17,9 +17,11 @@ O objetivo é provisionar uma instância EC2 (Ubuntu) e sua infraestrutura de re
 
 ---
 
-1. Estrutura do Projeto Terraform (etapa2/)
+**1. Estrutura do Projeto Terraform (etapa2/)**
 
 O conceito de Módulos é utilizado para que o código seja reutilizável, isolando a lógica de provisionamento de recursos semelhantes.
+
+**Estrutura do Diretório:**
 
 etapa2/
 ├── _modules/
@@ -31,15 +33,14 @@ etapa2/
 │   ├── networking/
 │   │   ├── main.tf
 │   │   ├── outputs.tf
-│   │   ├── variables.tf
+│   │   └── variables.tf
 │   └── security/
-│   │   ├── main.tf
-│   │   ├── outputs.tf
-│   │   ├── variables.tf
+│       ├── main.tf
+│       ├── outputs.tf
+│       └── variables.tf
 ├── main.tf (Chama os módulos)
 ├── providers.tf (Define o provedor AWS)
 └── README.md
-
 ---
 
 2. Configuração e Fluxo de Dados
