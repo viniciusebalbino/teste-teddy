@@ -1,11 +1,3 @@
-Para etapa 2 vou utilizar terraform para subir os recursos (Ec2) na amazon, e vou fazer a configuração da maquina usando o userdata.sh, isso ficaria como ponto de melhoria futura, ja que o uso do userdata pode trazer alguns problemas, relacionados a atualização de componentes por exemplo, então, apesar de ser funcional, não é a melhor opção, sendo a melhor opção a utilização de alguma ferramenta própria para post-configuration, como ansible por exemplo
-
-O script utilizado no userdata, basicamente é o mesmo .sh de instalação do docker criado na etapa1
-
-O terraform nessa etapa, foi criado utilizando o conceito de modulos, para permitir que o código (modulos) sejam reutilizáveis no futuro, caso necessário a criação de mais recursos semelhantes, foi criado modulos especificos para provisionamento da ec2 (ec2_docker), que sobe uma ec2, com uma imagem ubuntu, e roda dentro dela o userdata, que prepara a máquina com docker para rodar tudo que precisamos, networking, que provisiona toda parte de vpcs e infraestrutura de rede necessária para execução do que foi solicitado, e security, que é responsável pela parte de segurança (principalmente security grousp nesse caso).
-
-
-
 Esta documentação explica os passos da etapa 2, provisionamento de infraestrutura na AWS usando Terraform, criação de um servidor Linux (EC2) pré-configurado com o Docker.
 
 ---
